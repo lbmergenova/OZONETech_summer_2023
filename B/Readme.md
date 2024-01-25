@@ -41,25 +41,25 @@
 
 **входные данные**
 
-somesuperlongstring
-3
-1 2 la
-4 4 d
-10 13 tiny
+    somesuperlongstring
+    3
+    1 2 la
+    4 4 d
+    10 13 tiny
 
 **выходные данные**
 
-lamdsupertinystring
+    lamdsupertinystring
 
 **входные данные**
 
-somesuperlongstring
-4
-1 2 la
-4 4 d
-10 13 tiny
-4 5 ed
+    somesuperlongstring
+    4
+    1 2 la
+    4 4 d
+    10 13 tiny
+    4 5 ed
 
 **выходные данные**
 
-lamedupertinystring
+    lamedupertinystring
