@@ -1,0 +1,7 @@
+#!/bin/bash
+for file in ./tests/??; 
+do
+cat $file | go run main.go | cat > out
+sed -e "s/\r//g" $file.a > out.a ; 
+diff out.a out
+done

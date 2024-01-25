@@ -1,1 +1,3 @@
-# ozon_tech_summer_2023
+# Ozon tech
+
+Репозиторий с решениями задач для  Ozon tech summer 2023.
