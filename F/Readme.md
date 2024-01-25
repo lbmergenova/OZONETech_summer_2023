@@ -43,83 +43,83 @@
 
 **входные данные**
 
-2
-21
-[
-   {
+    2
+    21
+    [
+    {
      "id":0,
-     "name":"all"
-   },
-   {
-      "id":1,
-      "name":"clothes",
-      "parent":0
-   },
-   {
-      "id":2,
-      "name":"shoes",
-      "parent":0
-   },
-   {
-      "id":55,
-      "name":"sneakers",
-      "parent":2
-   }
-]
-6
- [ {"parent":	0,"id":100,  "name":
- "x"},{
-
-"name":"x","id":0}
-
-]
+         "name":"all"
+    },
+       {
+          "id":1,
+          "name":"clothes",
+          "parent":0
+       },
+       {
+          "id":2,
+          "name":"shoes",
+          "parent":0
+       },
+       {
+          "id":55,
+          "name":"sneakers",
+          "parent":2
+       }
+    ]
+    6
+     [ {"parent":	0,"id":100,  "name":
+     "x"},{
+        
+    "name":"x","id":0}
+    ]
 
 **выходные данные**
 
-[{
-	"id": 0,
-	"name": "all",
-	"next": [{
-		"id": 1,
-		"name": "clothes",
-		"next": []
-	}, {
-		"id": 2,
-		"name": "shoes",
-		"next": [{
-			"id": 55,
-			"name": "sneakers"
-		}]
-	}]
-},
-{"name":"x","id":0,"next":[{"id":100,"name":"x"}]}
-]
+    [{
+    	"id": 0,
+    	"name": "all",
+    	"next": [{
+    		"id": 1,
+    		"name": "clothes",
+    		"next": []
+    	}, {
+    		"id": 2,
+    		"name": "shoes",
+    		"next": [{
+    			"id": 55,
+    			"name": "sneakers"
+    		}]
+    	}]
+    },
+    {"name":"x","id":0,"next":[{"id":100,"name":"x"}]}
+    ]
+
 
 **входные данные**
 
-1
-9
-[
- {"name": "everything", "id": 0},
- {"name": "clothes", "id": 1, "parent": 0},
- {"name": "electronics", "id": 2, "parent": 0},
- {"name": "computers", "id": 4, "parent": 2},
- {"name": "aio", "id": 3, "parent": 4},
- {"name": "tv", "id": 5, "parent": 2},
- {"name": "house", "id": 6, "parent": 0}
-]
+    1
+    9
+    [
+     {"name": "everything", "id": 0},
+     {"name": "clothes", "id": 1, "parent": 0},
+     {"name": "electronics", "id": 2, "parent": 0},
+     {"name": "computers", "id": 4, "parent": 2},
+     {"name": "aio", "id": 3, "parent": 4},
+     {"name": "tv", "id": 5, "parent": 2},
+     {"name": "house", "id": 6, "parent": 0}
+    ]
 
 **выходные данные**
 
-[
-{"id":0,"name":"everything","next":[{"id":1,"name":"clothes","next":[]},{"id":2,"name":"electronics","next":[{"id":4,"name":"computers","next":[{"id":3,"name":"aio","next":[]}]},{"id":5,"name":"tv","next":[]}]},{"id":6,"name":"house","next":[]}]}
-]
+    [
+    {"id":0,"name":"everything","next":[{"id":1,"name":"clothes","next":[]},{"id":2,"name":"electronics","next":[{"id":4,"name":"computers","next":[{"id":3,"name":"aio","next":[]}]},{"id":5,"name":"tv","next":[]}]},{"id":6,"name":"house","next":[]}]}
+    ]
 
 *Примечание*
 
 Любые внешние библиотеки использовать нельзя.
 
-Для работы с JSON в языке C# можно пользоваться библиотекой System.Text.Json. Возможно, вам понадобится увеличить максимальную глубину сериализации/десериализации JSON (документация).
+Для работы с JSON в языке C# можно пользоваться библиотекой System.Text.Json. Возможно, вам понадобится увеличить максимальную глубину сериализации/десериализации JSON.
 
 Для работы с JSON в языке Go можно пользоваться библиотекой encoding/json.
 
