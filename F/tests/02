@@ -1,0 +1,11 @@
+1
+9
+[
+ {"name": "everything", "id": 0},
+ {"name": "clothes", "id": 1, "parent": 0},
+ {"name": "electronics", "id": 2, "parent": 0},
+ {"name": "computers", "id": 4, "parent": 2},
+ {"name": "aio", "id": 3, "parent": 4},
+ {"name": "tv", "id": 5, "parent": 2},
+ {"name": "house", "id": 6, "parent": 0}
+]
